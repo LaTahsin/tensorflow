@@ -136,6 +136,18 @@ tensorflow/models/research/:
 # From tensorflow/models/research/
 export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim
 ```
+in models\research directory run the following:
+python setup.py build
+python setup.py install
+go to model/research/slim and run the following:
+`pip install -e .`
+
+for windows
+```
+set PythonPath=%pythonpath%;c:\ml\models;c:\ml\models\research;c:\ml\models\research\slim
+```
+
+
 
 Note: This command needs to run from every new terminal you start. If you wish
 to avoid running this manually, you can add it as a new line to the end of your
